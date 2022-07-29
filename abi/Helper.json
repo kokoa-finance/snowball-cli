@@ -1,0 +1,209 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "roundId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "uint256",
+        "name": "estimateAPR",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRoundStatus",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "roundId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "estimatedReward",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalKlayLockedUp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ticketsSold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentTicketPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "startsAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "endsAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "breakTimeStartsAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "breakTimeEndsAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastTicketBoughtAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "countDownInterval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lockUpEndsAt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalReferralPoints",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "currentWinnerCandidate",
+            "type": "address"
+          },
+          {
+            "internalType": "bool",
+            "name": "isWinnerSelected",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isBreakTime",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "pklay",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "yklay",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "ticket",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "round",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "previousRound",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct Helper.RoundStatus",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint16",
+        "name": "roundId",
+        "type": "uint16"
+      },
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "referent",
+        "type": "address"
+      }
+    ],
+    "name": "getUserParticipationStatus",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "ticketsBought",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "klayLockedUp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "instantUnstakeFeePercent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "userYKlay",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalYKlaySnapshot",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "referralPoints",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "isValidReferent",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "ticketPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "referent",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct Helper.UserParticipationStatus",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
